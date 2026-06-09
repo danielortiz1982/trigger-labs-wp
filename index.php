@@ -27,9 +27,16 @@
         
         <!-- Open Graph / Social -->
         <meta property="og:type" content="website">
+        <meta property="og:image" content="https://triggerlabs.io/wp-content/uploads/2026/06/screenshot-scaled.png" />
         <meta property="og:title" content="Trigger Labs | Autonomous Business Engines">
         <meta property="og:description" content="Centralize and automate your business operations with custom AI triggers and continuous background execution.">
         <meta property="og:url" content="https://www.triggerlabs.com">
+
+        <!-- X / Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trigger Labs | Autonomous Business Engine" />
+        <meta name="twitter:description" content="Centralize and automate your business operations with custom AI triggers and continuous background execution." />
+        <meta name="twitter:image" content="https://triggerlabs.io/wp-content/uploads/2026/06/screenshot-scaled.png" />
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
