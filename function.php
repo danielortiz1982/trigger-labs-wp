@@ -1,16 +1,11 @@
 <?php
-/**
- * trigger_labs functions and definitions
- *
- * @package trigger_labs
- * @since trigger_labs 1.0
- */
-
     /**
-     * First, let's set the maximum content width based on the theme's
-     * design and stylesheet.
-     * This will limit the width of all uploaded images and embeds.
+     * trigger_labs functions and definitions
+     *
+     * @package trigger_labs
+     * @since trigger_labs 1.0
      */
+
     if ( ! isset( $content_width ) ) {
         $content_width = 800; /* pixels */
     }
@@ -18,14 +13,6 @@
 
     if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
 
-        /**
-         * Sets up theme defaults and registers support for various
-         * WordPress features.
-         *
-         * Note that this function is hooked into the after_setup_theme
-         * hook, which runs before the init hook. The init hook is too late
-         * for some features, such as indicating support post thumbnails.
-         */
         function trigger_labs_wp_setup() {
 
             /**
