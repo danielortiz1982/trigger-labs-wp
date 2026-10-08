@@ -51,12 +51,12 @@ if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
 		 * aside, gallery, quote, image, and video
 		 */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+	}
+endif; // trigger_labs_wp_setup
+add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
 
-        function my_theme_enqueue_styles() {
+    function my_theme_enqueue_styles() {
     // Enqueue the main style.css
     wp_enqueue_style( 'my-theme-main-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-	}
-endif; // trigger_labs_wp_setup
-add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
