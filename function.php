@@ -54,4 +54,3 @@ if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
 	}
 endif; // trigger_labs_wp_setup
 add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
-
