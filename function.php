@@ -55,9 +55,6 @@ if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
 endif; // trigger_labs_wp_setup
 add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
 
-/**
- * Enqueue theme styles.
- */
 function trigger_labs_wp_enqueue_styles() {
     // Loads the main style.css file from the root theme directory
     wp_enqueue_style( 'trigger-labs-wp-main-style', get_stylesheet_uri() );
