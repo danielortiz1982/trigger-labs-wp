@@ -55,7 +55,7 @@ if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
 endif; // trigger_labs_wp_setup
 add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
 
-    function my_theme_enqueue_styles() {
+function my_theme_enqueue_styles() {
     // Enqueue the main style.css
     wp_enqueue_style( 'my-theme-main-style', get_stylesheet_uri() );
 }
