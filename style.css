@@ -2456,3 +2456,352 @@ z-index: 2;
     position: relative;
     z-index: 2;
 }
+
+/* 
+    * Trigger Labs - Expanded FAQ & Knowledge Base Page
+    * Scoped for WordPress Content Area 
+    */
+
+.tl-faq-wrapper {
+    font-family: var(--font-main, 'Ubuntu', sans-serif);
+    color: var(--color-text-main, #042729);
+    background-color: var(--color-bg, #F9F5FF);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.tl-faq-wrapper * {
+    box-sizing: border-box;
+}
+
+.tl-container {
+    max-width: 1000px; /* Slightly narrower for optimal reading length */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.tl-text-gradient {
+    background: linear-gradient(to right, #FF4801, #C73800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tl-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: var(--color-primary, #FF4801);
+    color: #F9F5FF;
+    box-shadow: 0 0 15px rgba(255, 72, 1, 0.3);
+    text-decoration: none;
+}
+
+.tl-btn-primary:hover {
+    background-color: var(--color-primary-hover, #E03F00);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 72, 1, 0.4);
+}
+
+.tl-faq-hero {
+    position: relative;
+    padding: 100px 0 80px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border, #E0D7E8);
+    overflow: hidden;
+    background: var(--color-surface, #ffffff);
+}
+
+.tl-faq-hero-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255, 72, 1, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tl-faq-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tl-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background-color: var(--color-surface, #ffffff);
+    border: 1px solid var(--color-border, #E0D7E8);
+    border-radius: 999px;
+    color: var(--color-primary, #FF4801);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.tl-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-primary, #FF4801);
+    animation: tl-pulse-op 2s infinite;
+}
+
+@keyframes tl-pulse-op {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.tl-faq-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: var(--color-text-main, #042729);
+}
+
+.tl-faq-hero p {
+    font-size: 1.25rem;
+    color: var(--color-text-muted, #4F6D6F);
+    margin-bottom: 0;
+}
+
+.tl-faq-content-section {
+    padding: 80px 0 120px;
+    background-color: var(--color-bg, #F9F5FF);
+}
+
+.tl-faq-category {
+    margin-bottom: 64px;
+}
+
+.tl-faq-category:last-child {
+    margin-bottom: 0;
+}
+
+.tl-faq-category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--color-border, #E0D7E8);
+}
+
+.tl-faq-category-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-surface, #ffffff);
+    border: 1px solid var(--color-border, #E0D7E8);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary, #FF4801);
+    box-shadow: 0 4px 10px rgba(4, 39, 41, 0.03);
+}
+
+.tl-faq-category-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.tl-faq-category h2 {
+    font-size: 1.75rem;
+    color: var(--color-text-main, #042729);
+    margin: 0;
+}
+
+.tl-accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tl-accordion-item {
+    background-color: var(--color-surface, #ffffff);
+    border: 1px solid var(--color-border, #E0D7E8);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tl-accordion-item:hover {
+    border-color: var(--color-border-light, #CFC2DA);
+    box-shadow: 0 10px 25px rgba(4, 39, 41, 0.04);
+}
+
+.tl-accordion-toggle {
+    display: none; /* Hide the actual checkbox */
+}
+
+.tl-accordion-question {
+    width: 100%;
+    text-align: left;
+    padding: 24px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-main, #042729);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.tl-accordion-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    color: var(--color-primary, #FF4801);
+    margin-left: 16px;
+}
+
+.tl-accordion-icon::before, .tl-accordion-icon::after {
+    content: '';
+    position: absolute;
+    background-color: currentColor;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tl-accordion-icon::before { width: 16px; height: 2px; }
+.tl-accordion-icon::after { width: 2px; height: 16px; }
+
+.tl-accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 32px;
+    background: var(--color-surface, #ffffff);
+}
+
+.tl-accordion-answer p {
+    color: var(--color-text-muted, #4F6D6F);
+    margin-bottom: 24px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.tl-accordion-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.tl-accordion-answer strong {
+    color: var(--color-text-main, #042729);
+}
+
+.tl-accordion-answer ul {
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+    color: var(--color-text-muted, #4F6D6F);
+    line-height: 1.7;
+}
+
+.tl-accordion-answer ul li {
+    margin-bottom: 8px;
+}
+
+/* Active State Logic */
+.tl-accordion-toggle:checked ~ .tl-accordion-answer {
+    max-height: 1000px; /* Arbitrary large number for expansion */
+    padding: 24px 32px 32px;
+    border-top: 1px solid var(--color-border, #E0D7E8);
+}
+
+.tl-accordion-toggle:checked ~ .tl-accordion-question {
+    background-color: rgba(255, 72, 1, 0.02);
+}
+
+.tl-accordion-toggle:checked ~ .tl-accordion-question .tl-accordion-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+}
+
+.tl-accordion-toggle:checked ~ .tl-accordion-question .tl-accordion-icon::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.tl-aeo-callout {
+    background: var(--color-text-main, #042729);
+    border-radius: 24px;
+    padding: 48px;
+    color: var(--color-surface, #ffffff);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tl-aeo-callout::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.tl-aeo-content {
+    position: relative;
+    z-index: 2;
+}
+
+.tl-aeo-content h3 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.tl-aeo-content p {
+    color: #8A9D9E;
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin-bottom: 0;
+}
+
+.tl-cta-section {
+    padding: 80px 0 120px;
+    text-align: center;
+    background-color: var(--color-bg, #F9F5FF);
+}
+
+@media (max-width: 768px) {
+    .tl-accordion-question {
+        padding: 20px;
+        font-size: 1.05rem;
+    }
+    .tl-accordion-answer {
+        padding: 0 20px;
+    }
+    .tl-accordion-toggle:checked ~ .tl-accordion-answer {
+        padding: 20px 20px 24px;
+    }
+    .tl-aeo-callout {
+        padding: 32px 24px;
+    }
+}
