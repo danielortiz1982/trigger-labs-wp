@@ -20,28 +20,28 @@
         <meta name="ICBM" content="37.0902, -95.7129">
 
         <?php
-    // Dynamically fetch page data or fallback to defaults
-    $og_url = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    $og_title = is_singular() ? get_the_title() : 'Trigger Labs | Autonomous Business Engines';
-    $og_description = is_singular() && has_excerpt() ? strip_tags(get_the_excerpt()) : 'Centralize and automate your business operations with custom AI triggers and continuous background execution.';
-    $og_image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : 'https://triggerlabs.io/wp-content/uploads/2026/06/screenshot-scaled.png';
-?>
+            // Dynamically fetch page data or fallback to defaults
+            $og_url = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            $og_title = is_singular() ? get_the_title() : 'Trigger Labs | Autonomous Business Engines';
+            $og_description = is_singular() && has_excerpt() ? strip_tags(get_the_excerpt()) : 'Centralize and automate your business operations with custom AI triggers and continuous background execution.';
+            $og_image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : 'https://triggerlabs.io/wp-content/uploads/2026/06/screenshot-scaled.png';
+        ?>
 
-<!-- Open Graph / Social -->
-<meta property="og:type" content="<?php echo is_singular() ? 'article' : 'website'; ?>">
-<meta property="og:title" content="<?php echo esc_attr($og_title); ?>">
-<meta property="og:description" content="<?php echo esc_attr($og_description); ?>">
-<meta property="og:url" content="<?php echo esc_url($og_url); ?>">
-<meta property="og:image" content="<?php echo esc_url($og_image); ?>">
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="<?php echo esc_attr($og_title); ?>" />
+        <!-- Open Graph / Social -->
+        <meta property="og:type" content="<?php echo is_singular() ? 'article' : 'website'; ?>">
+        <meta property="og:title" content="<?php echo esc_attr($og_title); ?>">
+        <meta property="og:description" content="<?php echo esc_attr($og_description); ?>">
+        <meta property="og:url" content="<?php echo esc_url($og_url); ?>">
+        <meta property="og:image" content="<?php echo esc_url($og_image); ?>">
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="<?php echo esc_attr($og_title); ?>" />
 
-<!-- X / Twitter Card Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="<?php echo esc_attr($og_title); ?>">
-<meta name="twitter:description" content="<?php echo esc_attr($og_description); ?>">
-<meta name="twitter:image" content="<?php echo esc_url($og_image); ?>">
+        <!-- X / Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="<?php echo esc_attr($og_title); ?>">
+        <meta name="twitter:description" content="<?php echo esc_attr($og_description); ?>">
+        <meta name="twitter:image" content="<?php echo esc_url($og_image); ?>">
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
