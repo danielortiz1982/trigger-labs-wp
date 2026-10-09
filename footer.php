@@ -50,7 +50,7 @@
 
                 <div class="footer-bottom">
                     <div class="footer-copyright">
-                        © <span id="year">2026</span> Trigger Labs. Systemic Automation.<br />
+                        Trigger Labs. Systemic Automation. © <span id="year">2026</span><br />
                         1178 Broadway, New York, NY 10001
                     </div>
                 </div>
