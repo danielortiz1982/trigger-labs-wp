@@ -23,3 +23,10 @@
         wp_enqueue_style( 'trigger-labs-main-style', get_stylesheet_uri() );
     }
     add_action( 'wp_enqueue_scripts', 'trigger_labs_enqueue_styles' );
+
+
+
+
+
+
+
