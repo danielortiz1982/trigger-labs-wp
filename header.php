@@ -168,7 +168,7 @@
         <!-- Navigation -->
         <nav class="navbar">
             <div class="container navbar-content">
-                <a href="#" class="logo">
+                <a href="https://triggerlabs.io/" class="logo">
                     <svg viewBox="0 0 80 80" width="32" height="32">
                         <circle cx="40" cy="40" r="35" fill="none" stroke="#042729" stroke-width="2" stroke-dasharray="4 4" opacity="0.2" />
                         <circle cx="40" cy="40" r="20" fill="none" stroke="#042729" stroke-width="2" stroke-dasharray="2 4" opacity="0.3" />
