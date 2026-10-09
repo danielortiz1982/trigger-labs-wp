@@ -162,7 +162,6 @@
         ]
         }
         </script>
-        <?php get_head(); ?>
     </head>
     <body>
         <!-- Navigation -->
