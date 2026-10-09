@@ -182,10 +182,27 @@
                 </a>
                 
                 <div class="nav-links">
-                    <a href="#system">The System</a>
+                    <!-- <a href="#system">The System</a>
                     <a href="#process">How It Works</a>
                     <a href="#pillars">Five Pillars</a>
-                    <a href="#faq">FAQ</a>
+                    <a href="#faq">FAQ</a> -->
+                    
+                    <?php
+                        // Define the menu arguments
+                        $menu_args = array(
+                            'theme_location' => 'trigger_labs_wp',        // Replace with your registered menu slug
+                            'container'      => false,                    // Removes the outer <div> wrapper
+                            'items_wrap'     => '%3$s',                   // Removes the outer <ul> wrapper entirely
+                            'echo'           => false,                    // Returns the HTML instead of printing it
+                            'depth'          => 1                         // Prevents dropdowns/sub-menus
+                        );
+
+                        // Fetch the raw menu HTML string
+                        $menu_html = wp_nav_menu($menu_args);
+
+                        // Strip all HTML tags EXCEPT <a> tags
+                        echo strip_tags($menu_html, '<a>');
+                    ?>
                     <button class="btn btn-primary trigger-modal" id="nav-cta-desktop" style="display: none;">Get a Free Audit</button>
                 </div>
 
