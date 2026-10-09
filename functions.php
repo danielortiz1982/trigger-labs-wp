@@ -6,25 +6,16 @@
      * @since trigger_labs 1.0
      */
 
-    if ( ! isset( $content_width ) ) {
-        $content_width = 800; /* pixels */
+    function trigger_labs_wp_setup() {
+        add_theme_support( 'automatic-feed-links' );
+        add_theme_support( 'post-thumbnails' );
+        register_nav_menus( array(
+            'primary'   => __( 'Primary Menu', 'trigger_labs_wp' ),
+            'secondary' => __( 'Secondary Menu', 'trigger_labs_wp' ),
+        ) );
+        add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'image', 'video' ) );
     }
 
-
-    if ( ! function_exists( 'trigger_labs_wp_setup' ) ) :
-
-        function trigger_labs_wp_setup() {
-            add_theme_support( 'automatic-feed-links' );
-            add_theme_support( 'post-thumbnails' );
-
-            register_nav_menus( array(
-                'primary'   => __( 'Primary Menu', 'trigger_labs_wp' ),
-                'secondary' => __( 'Secondary Menu', 'trigger_labs_wp' ),
-            ) );
-
-            add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'image', 'video' ) );
-        }
-    endif; // trigger_labs_wp_setup
     add_action( 'after_setup_theme', 'trigger_labs_wp_setup' );
 
     function trigger_labs_enqueue_styles() {
