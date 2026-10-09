@@ -29,10 +29,10 @@
                     <div class="footer-col">
                         <h4>Navigation</h4>
                         <div class="footer-links-list">
-                            <a href="#system">The System</a>
-                            <a href="#process">How It Works</a>
-                            <a href="#pillars">Five Pillars</a>
-                            <a href="#faq">FAQ</a>
+                            <a href="https://triggerlabs.io/the-system/">The System</a>
+                            <a href="https://triggerlabs.io/how-it-works/">How It Works</a>
+                            <a href="https://triggerlabs.io/five-pillars/">Five Pillars</a>
+                            <a href="https://triggerlabs.io/faqs/">FAQ</a>
                             <a href="#" class="trigger-modal">Free Audit</a>
                         </div>
                     </div>
