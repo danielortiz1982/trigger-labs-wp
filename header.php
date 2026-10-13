@@ -186,18 +186,9 @@
                     <span>trigger<span class="logo-bold">_labs</span></span>
                 </a>
                 
-                <div class="nav-links">                    
-                    <?php
-                        $menu = wp_nav_menu( 
-                            array(
-                                'menu'       => 'main',
-                                'container'  => '',       // Removes the outer wrapper div/nav
-                                'items_wrap' => '%3$s',   // Removes the <ul> wrapper
-                                'echo'       => false,    // Returns the HTML as a variable
-                            ) 
-                        );
-                        echo strip_tags( $menu, '<a>' );
-                    ?>
+                <div class="nav-links">
+                    <?php $menu = wp_nav_menu( array( 'menu' => 'main', 'container'  => '', 'items_wrap' => '%3$s', 'echo' => false, ) ); ?>
+                    <?php echo strip_tags( $menu, '<a>' ); ?>
                     <button class="btn btn-primary trigger-modal" id="nav-cta-desktop" style="display: none;">Get a Free Audit</button>
                 </div>
 
@@ -207,9 +198,11 @@
 
         <!-- Mobile Navigation Overlay -->
         <div class="mobile-nav" id="mobile-menu">
-            <a href="#system" class="mobile-link">The System</a>
+            <!-- <a href="#system" class="mobile-link">The System</a>
             <a href="#process" class="mobile-link">How It Works</a>
             <a href="#pillars" class="mobile-link">Five Pillars</a>
-            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#faq" class="mobile-link">FAQ</a> -->
+            <?php $menu = wp_nav_menu( array( 'menu' => 'mobile', 'container'  => '', 'items_wrap' => '%3$s', 'echo' => false, ) ); ?>
+            <?php echo strip_tags( $menu, '<a>' ); ?>
             <button class="btn btn-primary trigger-modal w-full">Get a Free Audit</button>
         </div>
