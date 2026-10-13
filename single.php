@@ -47,8 +47,10 @@
                     <div class="tl-author-info">
                         <h4><?php echo get_the_author_meta( 'display_name' ); ?></h4>
                         <span>Lead Systems Architect @ Trigger Labs</span>
+                        <p><?php the_author_meta( 'description' ); ?></p>
                     </div>
                 </div>
+
             </div>
         </main>
 
