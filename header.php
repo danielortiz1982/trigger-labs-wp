@@ -202,7 +202,7 @@
             <a href="#process" class="mobile-link">How It Works</a>
             <a href="#pillars" class="mobile-link">Five Pillars</a>
             <a href="#faq" class="mobile-link">FAQ</a> -->
-            <?php $menu = wp_nav_menu( array( 'menu' => 'mobile', 'container'  => '', 'items_wrap' => '%3$s', 'echo' => false, ) ); ?>
+            <?php $menu = wp_nav_menu( array( 'menu' => 'main', 'container'  => '', 'items_wrap' => '%3$s', 'echo' => false, ) ); ?>
             <?php echo strip_tags( $menu, '<a>' ); ?>
             <button class="btn btn-primary trigger-modal w-full">Get a Free Audit</button>
         </div>
