@@ -43,14 +43,12 @@
             <div class="tl-content-container">
                 <?php the_content(); ?>
                 <div class="tl-author-box">
-                    <img src="https://placehold.co/100x100/E0D7E8/042729?text=ER" alt="Dr. Elena Rostova" class="tl-author-avatar">
+                    <img src="<?php echo esc_url( $avatar_url ); ?>" alt="<?php echo get_the_author_meta( 'display_name' ); ?>" class="tl-author-avatar">
                     <div class="tl-author-info">
-                        <h4>Dr. Elena Rostova</h4>
+                        <h4><?php echo get_the_author_meta( 'display_name' ); ?></h4>
                         <span>Lead Systems Architect @ Trigger Labs</span>
-                        <p>Elena holds a Ph.D. in Computer Science with a focus on distributed network architecture. She leads the backend engineering team at Trigger Labs, designing the fault-tolerant, self-healing routing protocols that power enterprise automation ecosystems.</p>
                     </div>
                 </div>
-
             </div>
         </main>
 
