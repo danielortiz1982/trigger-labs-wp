@@ -36,7 +36,7 @@
         </header>
 
         <div class="tl-post-featured-image">
-            <img src="<?php the_post_thumbnail(); ?>">
+            <img src="<?php the_post_thumbnail(); ?>" alt="<?php echo esc_attr( $alt_text ); ?>">
         </div>
 
         <main class="tl-post-body">
