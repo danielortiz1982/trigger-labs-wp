@@ -18,7 +18,9 @@
     <section class="tl-blog-feed-section">
         <div class="tl-container">
             <div class="tl-blog-grid">
-                <?php if(have_posts() ) : while(have_posts() ) : the_post(); ?>
+                <?php $args = array('post_type'      => 'post'); // Change to your custom post type if needed ?>
+                <?php $custom_query = new WP_Query( $args ); ?>
+                <?php if($custom_query->have_posts() ) : while($custom_query->have_posts() ) : $custom_query->the_post(); ?>
                 <?php $thumbnail_id = get_post_thumbnail_id( get_the_ID() ); ?>
                 <?php $alt_text = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ); ?>
                 <!-- Post 1 -->
@@ -42,6 +44,7 @@
                     </div>
                 </a>
                 <?php endwhile; endif; ?>
+                <?php wp_reset_postdata(); ?>
                 <!--End of post feed-->
             </div>
         </div>
