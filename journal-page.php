@@ -18,12 +18,13 @@
     <section class="tl-blog-feed-section">
         <div class="tl-container">
             <div class="tl-blog-grid">
-                <?php $args = array('post_type'      => 'post'); // Change to your custom post type if needed ?>
+                <?php $args = array('post_type' => 'post'); // Change to your custom post type if needed ?>
                 <?php $custom_query = new WP_Query( $args ); ?>
                 <?php if($custom_query->have_posts() ) : while($custom_query->have_posts() ) : $custom_query->the_post(); ?>
                 <?php $thumbnail_id = get_post_thumbnail_id( get_the_ID() ); ?>
                 <?php $alt_text = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ); ?>
-                <!-- Post 1 -->
+                <?php $post_date = get_the_date(); ?>
+                <!-- Post -->
                 <a href="<?php the_permalink(); ?>" class="tl-blog-card">
                     <div class="tl-blog-image-wrapper">
                         <img src="<?php the_post_thumbnail(); ?>" alt="<?php echo esc_attr( $alt_text ); ?>">
@@ -33,7 +34,7 @@
                             <div class="tl-blog-tags">
                                 <!-- <span class="tl-blog-tag">Architecture</span> -->
                             </div>
-                            <span class="tl-blog-date">Oct 12, 2026</span>
+                            <span class="tl-blog-date"><?php echo get_the_date('F j, Y'); ?></span>
                         </div>
                         <h3 class="tl-blog-title"><?php the_title(); ?></h3>
                         <p class="tl-blog-excerpt"><?php the_excerpt(); ?></p>
