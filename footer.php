@@ -9,7 +9,7 @@
                         <div class="footer-links-list">
                             <a target="_blank" href="https://x.com/triggerlabsio">Twitter (X)</a>
                             <a target="_blank" href="https://www.linkedin.com/company/triggerlabsio/">LinkedIn</a>
-                            <a target="_blank" href="https://www.tiktok.com/@triggerlabs.io">Titok</a>
+                            <a target="_blank" href="https://www.tiktok.com/@triggerlabs.io">TikTok</a>
                             <a target="_blank" href="https://www.youtube.com/@triggerlabsio">YouTube</a>
                         </div>
                     </div>
