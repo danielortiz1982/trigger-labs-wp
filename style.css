@@ -10,26 +10,7 @@
     Text Domain: TriggerLabs, Systemic, Automation, SMBs
 */
 
-/* CSS Variables */
-:root {
-    --color-bg: #F9F5FF;
-    --color-surface: #ffffff;
-    --color-surface-light: #F0EAF5;
-    --color-border: #E0D7E8;
-    --color-border-light: #CFC2DA;
-    --color-primary: #FF4801;
-    --color-primary-hover: #E03F00;
-    --color-text-main: #042729;
-    --color-text-muted: #4F6D6F;
-    --font-main: 'Ubuntu', sans-serif;
-    --transition-speed: 0.3s;
-    --table-border-color: #E2E8F0;      /* Light gray for borders */
-    --table-header-bg: #F8FAFC;         /* Very subtle gray/blue for header */
-    --table-header-text: #334155;       /* Dark slate for header text */
-    --table-row-hover: #F1F5F9;         /* Slight darkening on row hover */
-    --table-text-color: #475569;        /* Main body text color */
-    --table-radius: 8px;                /* Rounded corners */
-}
+@import url(./root.css);
 
 /* Base Reset */
 * {
