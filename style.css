@@ -10,9 +10,9 @@
     Text Domain: TriggerLabs, Systemic, Automation, SMBs
 */
 
-@import url(./root.css);
-@import url(./base.css);
-@import url(./chat.css);
+@import url(./assets/css/root.css);
+@import url(./assets/css/base.css);
+@import url(./assets/css/chat.css);
 
 .text-gradient {
     background: linear-gradient(to right, #FF4801, #C73800);
