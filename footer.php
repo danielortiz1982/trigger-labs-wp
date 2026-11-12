@@ -219,8 +219,8 @@
 
             if (newsletterForm) {
                 newsletterForm.addEventListener('submit', (e) => {
-                    e.preventDefault(); 
-                    const emailInput = newsletterForm.querySelector('input[type="email"]');
+                    // e.preventDefault(); 
+                    // const emailInput = newsletterForm.querySelector('input[type="email"]');
                     
                     if (emailInput.value) {
                         newsletterMessage.classList.add('success');
