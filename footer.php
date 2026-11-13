@@ -278,7 +278,7 @@
 
             if (auditForm) {
                 auditForm.addEventListener('submit', (e) => {
-                    e.preventDefault(); 
+                    // e.preventDefault(); 
                     
                     formContent.style.display = 'none';
                     successMessage.classList.add('active');
