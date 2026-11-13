@@ -66,25 +66,25 @@
                     <h2>System Audit Request</h2>
                     <p style="margin-top: 8px; font-size: 0.9rem;">Tell us a bit about your operations, and we'll blueprint an autonomous system for you.</p>
                     
-                    <form class="modal-form" id="audit-form">
+                    <form class="modal-form" id="audit-form" method="POST" action="wr6rgkauyjpgx3q2ehgjflk9xyh1culy@hook.us2.make.com">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Work Email</label>
-                            <input type="email" id="email" class="form-input" placeholder="john@company.com" required>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required>
                         </div>
 
                         <div class="form-group">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" class="form-input" placeholder="Acme Corp" required>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Acme Corp" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="bottleneck">What is your biggest manual bottleneck?</label>
-                            <textarea id="bottleneck" class="form-textarea" placeholder="e.g. We spend 15 hours a week manually moving data from our CRM to our billing software..."></textarea>
+                            <textarea id="bottleneck" name="bottleneck" class="form-textarea" placeholder="e.g. We spend 15 hours a week manually moving data from our CRM to our billing software..."></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">Initialize Audit</button>
