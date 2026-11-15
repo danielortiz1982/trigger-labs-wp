@@ -18,8 +18,6 @@
                     
                     <h1 class="tl-post-title"><?php the_title(); ?></h1>
                     
-                    <p class="tl-post-excerpt"><?php the_excerpt(); ?></p>
-                    
                     <div class="tl-post-meta">
                         <div class="tl-meta-author">
                             <img src="<?php echo esc_url( $avatar_url ); ?>" alt="<?php echo get_the_author_meta( 'display_name' ); ?>">
